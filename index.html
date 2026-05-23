@@ -1,160 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Moz Verify</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:sans-serif;
-}
-
-body{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background:
-linear-gradient(135deg,#0f172a,#111827,#1e293b);
-overflow:hidden;
-}
-
-.blur1,
-.blur2{
-position:absolute;
-border-radius:50%;
-filter:blur(120px);
-}
-
-.blur1{
-width:350px;
-height:350px;
-background:#ff7b00;
-top:-100px;
-left:-100px;
-opacity:.5;
-}
-
-.blur2{
-width:350px;
-height:350px;
-background:#3b82f6;
-bottom:-100px;
-right:-100px;
-opacity:.5;
-}
-
-.card{
-position:relative;
-width:360px;
-padding:40px;
-
-background:rgba(255,255,255,0.08);
-
-backdrop-filter:blur(25px);
-
-border:1px solid rgba(255,255,255,0.1);
-
-border-radius:30px;
-
-box-shadow:
-0 8px 32px rgba(0,0,0,0.4);
-
-text-align:center;
-
-color:white;
-
-z-index:10;
-}
-
-.logo{
-font-size:70px;
-margin-bottom:15px;
-}
-
-h1{
-font-size:34px;
-margin-bottom:10px;
-}
-
-p{
-opacity:.7;
-margin-bottom:30px;
-line-height:1.5;
-}
-
-button{
-width:100%;
-padding:16px;
-border:none;
-border-radius:18px;
-
-background:
-linear-gradient(135deg,#ff7b00,#ff9500);
-
-color:white;
-font-size:18px;
-font-weight:bold;
-
-cursor:pointer;
-transition:.3s;
-}
-
-button:hover{
-transform:scale(1.03);
-box-shadow:0 0 25px #ff7b00;
-}
-
-.footer{
-margin-top:20px;
-font-size:13px;
-opacity:.5;
-}
-
-</style>
-
+<title>Verify</title>
 </head>
 
-<body>
+<body style="background:#0f172a;color:white;text-align:center;font-family:sans-serif;padding-top:120px">
 
-<div class="blur1"></div>
-<div class="blur2"></div>
+<h1>🦊 Moz Verify</h1>
 
-<div class="card">
+<p>Click below to verify your Discord account</p>
 
-<div class="logo">🦊</div>
-
-<h1>Moz Verify</h1>
-
-<p>
-Secure Discord Verification System
-</p>
-
-<button onclick="verify()">
-Verify Now
+<a href="/api/login">
+<button style="padding:15px 30px;border:none;border-radius:10px;background:orange;color:white;cursor:pointer">
+Verify
 </button>
-
-<div class="footer">
-Powered by Moz Studio
-</div>
-
-</div>
-
-<script>
-
-function verify(){
-window.location.href = "/verify";
-}
-
-</script>
+</a>
 
 </body>
 </html>
